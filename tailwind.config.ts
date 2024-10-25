@@ -1,19 +1,16 @@
 import type { Config } from "tailwindcss";
+import plugin from "tailwindcss/plugin";
 
 const config: Config = {
-  content: [
-    "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
-    "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
+  content: ["./src/**/*.{js,ts,jsx,tsx,mdx}"],
+  plugins: [
+    plugin(function ({ addUtilities }) {
+      addUtilities({
+        ".text-shadow": {
+          textShadow: "0 2px 10px rgba(0, 0, 0, 1)",
+        },
+      });
+    }),
   ],
-  theme: {
-    extend: {
-      colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
-      },
-    },
-  },
-  plugins: [],
 };
 export default config;
