@@ -1,5 +1,4 @@
-import { useEffect, useState } from 'react'
-import Image from 'next/image'
+import { useState } from 'react'
 
 import { motion } from 'framer-motion'
 
@@ -7,25 +6,9 @@ import type { ScreenContent } from '@/app/game/content'
 import { useGameContext } from '@/providers/game-provider'
 import { TextProvider } from '@/providers/text-provider'
 
-import SplashImage from '~/images/splash.webp'
-
 import { Choices } from './choices'
 
-type ImageWithFallbackProps = React.ComponentProps<typeof Image>
-
-const ImageWithFallback = ({ alt, src, ...props }: ImageWithFallbackProps) => {
-  const [error, setError] = useState(false)
-
-  useEffect(() => {
-    setError(false)
-  }, [src])
-
-  return (
-    <Image alt={alt} onError={() => setError(true)} src={error ? SplashImage : src} {...props} />
-  )
-}
-
-export const Screen = ({ content, screenId }: { content: ScreenContent; screenId: number }) => {
+export const Screen = ({ content }: { content: ScreenContent }) => {
   const [choicesVisible, setChoicesVisible] = useState(false)
   const { onContinue, addChoice, choices } = useGameContext()
 
@@ -61,12 +44,6 @@ export const Screen = ({ content, screenId }: { content: ScreenContent; screenId
       exit={{ opacity: 0, transition: { duration: 0.5 } }}
       className="absolute inset-0 flex min-h-dvh flex-col"
     >
-      <ImageWithFallback
-        src={`/images/screen_${screenId + 1}.webp`}
-        alt={`Screen ${screenId + 1}`}
-        fill
-        className="-z-10 object-cover"
-      />
       {renderContent()}
     </motion.section>
   )
