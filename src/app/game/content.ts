@@ -84,18 +84,12 @@ export const gameContent: ScreenContent[] = [
       'Tomek przedziera się z trudem przez krzaki, zwracając uwagę na odgłos chlupiącej wody i dziwnej melodii dochodzącej zza krzaków. Tomek wyjrzał lekko się wychylił, by odkryć... ogra',
       'Gigantyczny ogr o imieniu Krzysztof siedział pośrodku ogromnego bajorka, kąpiąc się w jego błotnistej wodzie, nucąc pod nosem hymn Lecha Poznań i rzucając sobie kamyczki, które lądowały z pluskiem na brzegu.',
       'Tomek zatrzymał się, nieco zaniepokojony, ale Krzysztof, dostrzegając go, natychmiast uśmiechnął się szeroko, jakby zobaczył dawno niewidzianego kolegę z trybun stadionu.',
-    ],
-  },
-  {
-    paragraphs: [
       '– Ooo, witaj, czarodzieju! Co cię sprowadza w te strony? – zawołał ogr, podnosząc się z wody.',
       'Tomek, trochę zbity z tropu, odpowiedział:',
       '– Eee, wędruję po Pijackim Lesie, szukam smaczków, które pomogą wyleczyć mojego pieska...',
       'Krzysztof zmarszczył brwi, jakby chciał pomóc, ale nie do końca wiedział jak.',
+      'Tomek westchnął, wiedząc, że nie ma innego wyjścia. Krzysztof kontynuował:',
     ],
-  },
-  {
-    paragraphs: ['Tomek westchnął, wiedząc, że nie ma innego wyjścia. Krzysztof kontynuował:'],
     choices: [
       {
         title: 'Zagrajmy w mecz! ',
@@ -140,10 +134,8 @@ export const gameContent: ScreenContent[] = [
       'Co powiesz na pokaz tańca mojego ludu? Tylko dla ciebie! W zamian poproszę o... niewielką zapłatę.',
       'Tomek spojrzał na leprechauna z niedowierzaniem. Marcin wyglądał jakby przyjechał z innej bajki. Marcin kontynuował:',
       '– Wiesz, my leprechauni jesteśmy świetnymi tancerzami! Taki taniec może przynieść szczęście, a ja obiecuję, że na końcu tańca powiem ci, gdzie znajdziesz rzadkie smaczki, które szukasz!',
+      'Tomek westchnął, wiedząc, że nie ma innego wyjścia.',
     ],
-  },
-  {
-    paragraphs: ['Tomek westchnął, wiedząc, że nie ma innego wyjścia. Krzysztof kontynuował:'],
     choices: [
       {
         title: 'Zgodzić się na taniec i zapłacić Marcinowi',
@@ -187,10 +179,6 @@ export const gameContent: ScreenContent[] = [
       '– Ej, czarodziej! – z ciemności wyłonił się Michał, typowy łotrzyk z kapturkiem na głowie i sztyletem w ręce. - Dawaj złoto, albo... albo czekają cię kłopoty!',
       'Tomek nieco zaskoczony, ale pewny siebie odpowiedział:',
       '- Nie mam czasu na takie głupoty. Spływaj stąd zanim ci nie zrobię krzywdy! - Przecież to tylko człowiek. Z łatwością go pokonam przy użyciu magii. Już dostałem swoją nauczkę, nie dam się pokonać drugi raz - pomyślał Tomek.',
-    ],
-  },
-  {
-    paragraphs: [
       '- No dobra, skoro tak... - powiedział zakładając bokserską szatę i wypijając eliksir o nazwie pięściogrom dający  +10 do siły ataku.',
       'Tomek poczuł, jak miękną mu kolana na widok Michała, który teraz emanował czystą siłą i sportową zaciętością. Miał jednak trzy opcje, jak wybrnąć z tej trudnej sytuacji:',
     ],
@@ -224,22 +212,14 @@ export const gameContent: ScreenContent[] = [
     paragraphs: [
       'Nie mineło długo jak z walki Tomka z Michałem zrobiło się niemałe zbiegowisko. Pojawili się biznesmeni obstawiający wynik walki. Wśród publiczności Tomek zauważył nawet bandę leprechaunów z jego pieniędzmi.',
       'Nie zdążył się lepiej rozejrzeć, bo Michał już ruszył na niego z pięściami. Świat nagle zawirował, a potem nastała ciemność.',
-    ],
-  },
-  {
-    paragraphs: [
       'Tomek powoli otworzył oczy, czując, jak każdy kawałek jego ciała protestuje. Był poobijany i wyraźnie miał za sobą nieprzyjemne przygody.',
-      'Rozglądając się, zauważył, że leży w małej polanie otoczonej drzewami, a obok niego siedzi Gaweł, miejscowy chłop, znany z tego, że pędzi bimber w swoim domku tuż obok Pijackiego Lasu.',
     ],
   },
   {
     paragraphs: [
+      'Rozglądając się, zauważył, że leży w małej polanie otoczonej drzewami, a obok niego siedzi Gaweł, miejscowy chłop, znany z tego, że pędzi bimber w swoim domku tuż obok Pijackiego Lasu.',
       'Gaweł, z butelką w dłoni, zerknął na Tomka, a jego twarz rozjaśniła się szerokim uśmiechem.',
       '– A, w końcu się obudziłeś! – zawołał radośnie. – Jak tam, czarodzieju? Po przygodach w lesie? Mam tu coś dla ciebie! Gżdylnij sobie! – dodał, podając butelkę do Tomka.',
-    ],
-  },
-  {
-    paragraphs: [
       'Tomek spojrzał na Gawła z lekkim niedowierzaniem. Czy powinien się napić? Może to był klucz do jego kolejnych przygód, a może prosto wprost do kłopotów?',
     ],
     choices: [
@@ -349,16 +329,14 @@ export const gameContent: ScreenContent[] = [
       'Tomek nie zdążył wcielić swojego planu w życie, ponieważ zanim podjął decyzję, Gaweł zamachnął się i pacnął Matiego.',
       'Przeklęte robactwo!',
       'Mati poleciał daleko poza obszar lasu i wszelki słuch o nim zaginął.',
-      'Następnie bohaterowie docierają na terytorium Mafii Zielarzy i udają się prosto na rozmowę z bossem, Pawłem Bujnowłosym.',
     ],
   },
   {
     paragraphs: [
-      '– A więc to wy – powiedział Paweł, leniwie głaszcząc króliczki. – Gaweł, dawno się nie widzieliśmy. A to pewnie Tomek, ten czarodziej, który szuka ratunku dla swojego psiaka.',
-      'Tomek skinął głową, próbując nie zwracać uwagi na króliczki, które biegały między jego nogami i podgryzały jego buty.',
-      '– Potrzebujemy rzadkich smaczków, które uratują Rafika – powiedział Tomek. – Wiem, że wy macie dostęp do wszystkiego, co rośnie w tym lesie.',
-      'Paweł spojrzał na niego z lekkim uśmiechem, po czym powiedział:',
-      '– To prawda, króliczki są ekspertami od smaczków. Znamy każdy liść, każdą łodyżkę w tym lesie. Ale... – tu jego ton stał się poważniejszy – nic nie ma za darmo.',
+      'Ku zdumieniu bohaterów wróżka upuściła paczkę smaczków dla psów jakich jeszcze nie widzieli.',
+      '- Na gżdylki Gawła! Toż to cel mojej wyprawy! - wykrzyknął Tomek',
+      'Uradowany tym niespodziewanym lootem postanowił wrócić z nimi do domu i spróbować udobruchać marudnego pieska.',
+      'Wniosek z tej opowieści jest taki, że przemoc to jednak nie wybór, lecz rozwiązanie.',
     ],
   },
 ]

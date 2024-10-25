@@ -3,7 +3,7 @@
 import Image from 'next/image'
 import Link from 'next/link'
 
-import SplashImage from '~/images/splash.png'
+import SplashImage from '~/images/splash.webp'
 
 import { FadeIn } from '../components/fade-in'
 

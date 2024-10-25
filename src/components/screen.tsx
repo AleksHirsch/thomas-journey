@@ -7,7 +7,7 @@ import type { ScreenContent } from '@/app/game/content'
 import { useGameContext } from '@/providers/game-provider'
 import { TextProvider } from '@/providers/text-provider'
 
-import SplashImage from '~/images/splash.png'
+import SplashImage from '~/images/splash.webp'
 
 import { Choices } from './choices'
 
@@ -62,7 +62,7 @@ export const Screen = ({ content, screenId }: { content: ScreenContent; screenId
       className="absolute inset-0 flex min-h-dvh flex-col"
     >
       <ImageWithFallback
-        src={`/images/screen_${screenId + 1}.png`}
+        src={`/images/screen_${screenId + 1}.webp`}
         alt={`Screen ${screenId + 1}`}
         fill
         className="-z-10 object-cover"
