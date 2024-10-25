@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 import { FadeIn } from '@/components/fade-in'
 
-import SplashImage from '~/images/splash.png'
+import SplashImage from '~/images/splash.webp'
 
 export default function Home() {
   return (
