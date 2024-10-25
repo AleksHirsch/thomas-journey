@@ -57,9 +57,9 @@ export const Screen = ({ content, screenId }: { content: ScreenContent; screenId
   return (
     <motion.section
       initial={{ opacity: 0 }}
-      animate={{ opacity: 1, transition: { duration: 0.5 } }}
+      animate={{ opacity: 1, transition: { duration: 0.5, delay: 0.1 } }}
       exit={{ opacity: 0, transition: { duration: 0.5 } }}
-      className="flex min-h-dvh flex-col"
+      className="absolute inset-0 flex min-h-dvh flex-col"
     >
       <ImageWithFallback
         src={`/images/screen_${screenId + 1}.png`}

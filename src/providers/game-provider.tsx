@@ -39,7 +39,7 @@ export const GameProvider = () => {
 
   return (
     <GameContext.Provider value={{ screenIndex: index, onContinue, isLast, choices, addChoice }}>
-      <AnimatePresence mode="wait">
+      <AnimatePresence mode="popLayout">
         {gameContent.map((content, i) => {
           return index === i && <Screen key={i} content={content} screenId={i} />
         })}
