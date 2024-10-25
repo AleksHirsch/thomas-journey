@@ -1,36 +1,40 @@
-"use client";
+'use client'
 
-import { useRef } from "react";
+import { useRef } from 'react'
 
-import { useGSAP } from "@gsap/react";
-import gsap from "gsap";
-import TextPlugin from "gsap/TextPlugin";
+import { useGSAP } from '@gsap/react'
+import gsap from 'gsap'
+import TextPlugin from 'gsap/TextPlugin'
 
-gsap.registerPlugin(TextPlugin);
+gsap.registerPlugin(TextPlugin)
 
 export const Typewriter = (props: { text: string }) => {
-  const ref = useRef(null);
+  const ref = useRef(null)
 
   useGSAP(() => {
     gsap.to(ref.current, {
       text: props.text,
       delay: 0.2,
       duration: props.text.length * 0.01,
-      ease: "none",
+      ease: 'none',
       onComplete: () => {
-        gsap.to(".continue", {
+        gsap.to('.continue', {
           duration: 1,
           delay: 0.5,
           opacity: 1,
-        });
+        })
       },
-    });
-  }, [props.text]);
+    })
+  }, [props.text])
 
   return (
-    <p>
+    <p
+      style={{
+        fontSize: 'calc(16px + 6 * ((100vw - 320px) / 680))',
+      }}
+    >
       <span ref={ref} />
-      <span className="continue opacity-0 block text-right">Dalej &gt;</span>
+      <span className="continue block text-right opacity-0">Dalej &gt;</span>
     </p>
-  );
-};
+  )
+}
